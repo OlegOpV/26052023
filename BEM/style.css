@@ -1,0 +1,39 @@
+.error,
+.red-text {
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: red;
+    border-radius: 20px;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    min-height: 150px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: brown;
+}
+
+.search-form {
+    width: 300px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 224, 245);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}

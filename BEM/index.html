@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>БЭМ</title>
+</head>
+
+<body>
+
+    <h2>Блок</h2>
+    <!-- Верно. Семантически осмысленный блок `error` -->
+    <div class="error">ОШИБКА</div>
+
+    <!-- Неверно. Описывается внешний вид -->
+    <div class="red-text">ОШИБКА</div>
+
+    <h2>Элемент</h2>
+    <!-- Блок `search-form` -->
+    <form class="search-form">
+        <!-- Элемент `input` блока `search-form` -->
+        <input class="search-form__input">
+        <!-- Элемент `button` блока `search-form` -->
+        <button class="search-form__button">Найти</button>
+    </form>
+
+    <h2>ВЛОЖЕННОСТЬ</h2>
+    <!-- Блок `header` -->
+    <header class="header">
+        <!-- Вложенный блок `logo` -->
+        <div class="logo"></div>
+
+        <!-- Вложенный блок `search-form` -->
+        <form class="search-form"></form>
+    </header>
+
+    <h2>ПРИНАДЛЕЖНОСТЬ (ВЕРНО)</h2>
+    <!-- Верно. Элементы лежат внутри блока `search-form` -->
+    <!-- Блок `search-form` -->
+    <form class="search-form">
+        <!-- Элемент `input` блока `search-form` -->
+        <input class="search-form__input">
+        <!-- Элемент `button` блока `search-form` -->
+        <button class="search-form__button">Найти</button>
+    </form>
+
+    <h2>ПРИНАДЛЕЖНОСТЬ (НЕ ВЕРНО)</h2>
+    <!-- Неверно. Элементы лежат вне контекста блока `search-form` -->
+    <!-- Блок `search-form` -->
+    <form class="search-form">
+    </form>
+    <!-- Элемент `input` блока `search-form` -->
+    <input class="search-form__input">
+    <!-- Элемент `button` блока `search-form` -->
+    <button class="search-form__button">Найти</button>
+
+    <h2>НЕОБЯЗАТЕЛЬНОСТЬ</h2>
+    <!-- Блок `search-form` -->
+    <div class="search-form">
+        <!-- Блок `input` -->
+        <input class="input">
+        <!-- Блок `button` -->
+        <button class="button">Найти</button>
+    </div>
+
+</body>
+
+</html>
