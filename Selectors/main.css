@@ -1,0 +1,44 @@
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+}
+
+.block:active {
+    background-color: red;
+}
+
+*:focus {
+    background-color: green
+}
+
+input:disabled {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.check:checked+span {
+    color: red;
+    text-transform: uppercase;
+}
+
+.list {
+    background-color: bisque;
+    width: 300px;
+    border: 2px solid red;
+}
+
+.item {
+    margin-bottom: 20px;
+}
+
+.item:last-child {
+    margin-bottom: 0px;
+}
+
+.item:first-child {
+    background-color: green;
+}
+
+.item:nth-child(3) {
+    background-color: red;
+}
