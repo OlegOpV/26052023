@@ -1,0 +1,16 @@
+h1 {
+    background-color: red;
+    width: 350px;
+}
+
+b {
+    background-color: aquamarine;
+}
+
+.inline {
+    display: block;
+}
+
+.box {
+    display: inline;
+}
