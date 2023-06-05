@@ -53,7 +53,7 @@ a {
 .conteiner {
     max-width: 1200px;
     padding: 0px 10px;
-    background-color: rgb(2, 68, 190);
+    background-color: aquamarine;
     margin: 0px auto;
 }
 
@@ -116,18 +116,65 @@ a {
     color: #FFFFFF;
 }
 
-.hero {}
+/* hero */
+
+.hero {
+    min-height: 750;
+    height: 1px;
+    background-color: #2C3B45;
+}
+
+.hero__conteiner {
+    height: 100%;
+    background-color: aquamarine;
+}
 
 .hero__content {}
 
 .location {}
 
-.location_icon {}
+.location_icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
 
-.location__text {}
+.location__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #1e92e7;
 
-.title {}
+}
 
-.btn {}
+.title {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.hero__title {
+    margin-bottom: 47px;
+}
+
+.btn {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.btn_type_click {
+    background-color: blue;
+}
 
 .hero__img {}

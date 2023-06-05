@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('./font/roboto-bold-webfont.woff2' format('woff2')),
+        url('./font/roboto-bold-webfont.woff' format('woff')),
+        font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./font/roboto-medium-webfont.woff2' format('woff2')),
+        url('./font/roboto-medium-webfont.woff' format('woff')),
+        font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('./font/roboto-regular-webfont.woff2') format('woff2');
+    url('./font/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.42;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.wrapper {
+    width: 1000px;
+    background-color: #037546;
+    height: 600px;
+    margin-top: 100px;
+    margin-left: 100px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    z-index: -20;
+
+}
+
+.item1,
+.item2,
+.item3 {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
+
+.item1 {
+    background-color: #41418f;
+    height: 200px;
+    width: 200px;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    z-index: 10;
+}
+
+.item2 {
+    background-color: #e69926;
+    height: 250px;
+    width: 250px;
+    top: 40px;
+    left: 50px;
+    position: absolute;
+}
+
+.item3 {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    top: 20px;
+    left: 40px;
+    position: absolute;
+    z-index: -10;
+}
