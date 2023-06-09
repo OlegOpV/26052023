@@ -3,13 +3,9 @@
 }
 
 .container {
-    max-width: 1000px;
-    height: 500px;
+    max-width: 1002px;
     border: 1px solid black;
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .item {
@@ -17,6 +13,8 @@
     color: white;
     font-size: 30px;
     text-align: center;
+    flex-basis: 150px;
+    flex: 1 1 150px;
 }
 
 .item:nth-child(2) {}
